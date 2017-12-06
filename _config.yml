@@ -9,6 +9,8 @@ remote_theme             : "mmistakes/minimal-mistakes"
 
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+future                   : false
+
 # Site Settings
 locale                   : "en-US"
 title                    : "Luis Miguel Serrano's Website"
