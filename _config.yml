@@ -90,7 +90,7 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/luis-miguel-serrano.jpg"
+  avatar           : "/assets/images/Luis_Miguel_Serrano.jpg"
   bio              : "Bio."
   location         : "Lisbon, Portugal"
   email            : "LMSSerrano@gmail.com"
