@@ -7,7 +7,9 @@
 
 remote_theme             : "mmistakes/minimal-mistakes"
 
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dirt" #"default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+future                   : false
 
 # Site Settings
 locale                   : "en-US"
@@ -24,7 +26,7 @@ words_per_minute         : 200
 comments:
   provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman_v2", "staticman" "custom"
   disqus:
-    shortname            :
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -49,8 +51,8 @@ staticman:
       options:
         format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
-  siteKey                : #"6LdRBykTAAAAAFB46MnIu6ixuxwu9W1ihFF8G60Q"
-  secret                 : #"PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="
+  siteKey                : "6LdEPjwUAAAAALn51yZoLkboqjCrPRNzKsjAtcOW" #"6LdRBykTAAAAAFB46MnIu6ixuxwu9W1ihFF8G60Q"
+  secret                 : "StsyhzdESoBf3HeD9Gj52v+pKeStGxFjdtPt9EQoZ/010ih3RXBdegez2YEK1honht511Kn3DI/RDby/G4sDYoaf4vl/yYuA+akuHvE6k0e6fCEIG7cpBA5xCrSylIpyGtiduFu1LYM3zw4s0zEtq7qOTrve0BmfS4h96iQkezc=" #"PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="
 
 atom_feed:
   path                   : # blank (default) uses feed.xml
@@ -63,9 +65,9 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : &twitter "mmistakes"
+  username               : &twitter "LuisMigSerrano"
 facebook:
-  username               : &facebook "michaelrose"
+  username               : &facebook "LuisMigSerrano"
   app_id                 :
   publisher              :
 og_image                 : "/assets/images/site-logo.png" # Open Graph/Twitter default site image
@@ -75,40 +77,40 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://twitter.com/mmistakes"
-    - "https://facebook.com/michaelrose"
+    - "https://twitter.com/LuisMigSerrano"
+    - "https://facebook.com/LuisMigSerrano"
 
 # Analytics
 analytics:
   provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-2011187-3" # Replace this with your ID, or delete
+    tracking_id          : "UA-110947715-2" # Replace this with your ID, or delete
 
 
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/michael-rose.jpg"
-  bio              : "Just another boring, tattooed, time traveling, designer."
-  location         : "Buffalo, NY"
-  email            :
+  avatar           : "/assets/images/luis-miguel-serrano.jpg"
+  bio              : "Bio."
+  location         : "Lisbon, Portugal"
+  email            : "LMSSerrano@gmail.com"
   uri              : "https://lmserrano.github.io"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : *facebook
+  facebook         : # *facebook
   foursquare       :
-  github           : "mmistakes"
+  github           : "lmserrano"
   gitlab           :
   google_plus      :
   keybase          :
-  instagram        : "mmistakes"
+  instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "LuisMigSerrano"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # https://stackoverflow.com/users/123456/username
+  stackoverflow    : "https://stackoverflow.com/users/371388/luis-miguel-serrano" # https://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
   twitter          : *twitter
@@ -259,7 +261,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Lisbon # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -316,3 +318,20 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+# Settings for builing master branch with travis-ci
+# with jekyll-travis
+
+# Settings for deploy rake task
+# Username and repo of Github repo, e.g.
+# https://github.com/USERNAME/REPO.git
+# username defaults to ENV['GIT_NAME'] used by Travis
+# repo defaults to USERNAME.github.io
+# Branch defaults to "source" for USERNAME.github.io
+# or "master" otherwise
+username: lmserrano
+repo: luismiguelserrano-website
+source_branch: master # source
+destination_brach: gh-pages # master
+destination: ../gh-pages/
