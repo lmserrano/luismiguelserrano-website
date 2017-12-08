@@ -331,7 +331,7 @@ compress_html:
 # Branch defaults to "source" for USERNAME.github.io
 # or "master" otherwise
 username: lmserrano
-repo: lmserrano.github.io
+repo: luismiguelserrano-website
 source_branch: master # source
 destination_brach: gh-pages # master
 destination: ../gh-pages/
