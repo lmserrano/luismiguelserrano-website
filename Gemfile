@@ -36,7 +36,7 @@ gem 'commonmarker'
 
 gem 'github-pages', '172', group: :jekyll_plugins
 gem 'rake', '12.0.0'
-gem 'minimal-mistakes-jekyll', '4.7.1'
+gem 'minimal-mistakes-jekyll', '4.8.0'
 
 gem 'wdm', '~> 0.1.0' if Gem.win_platform?
 gem 'jekyll-remote-theme'

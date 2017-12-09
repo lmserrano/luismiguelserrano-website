@@ -7,7 +7,7 @@ header:
   cta_label: "<i class='fa fa-id-card-o'></i>  See my CV"
   cta_url: "https://lmserrano.github.io"
   caption:
-excerpt: 'Software Engineer.<br />IT consultant, Independent Developer and Freelancer.<br /><small>Full Stack & DevOps. Product Development. Remote Tech Startups Setup.</small>
+excerpt: 'Software Engineer.<br />IT consultant, Independent Developer and Freelancer.<br />Full Stack & DevOps. Product Development. Remote Tech Startups Setup.
 <br /><br />
 {::nomarkdown}<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=lmserrano&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="280px" height="30px"></iframe> {:/nomarkdown}'
 feature_row:
@@ -56,7 +56,7 @@ feature_row:
 github:
   - excerpt: '{::nomarkdown}<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=lmserrano&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="280px" height="30px"></iframe> {:/nomarkdown}'
 intro:
-  - excerpt: 'Get notified when I add or post new content &nbsp; [<i class="fa fa-twitter"></i> @LuisMigSerrano](https://twitter.com/LuisMigSerrano){: .btn .btn--twitter} [<i class="fa fa-paypal"></i> Tip Me](https://www.paypal.me/LuisMiguelSerrano){: .btn .btn--primary}'
+  - excerpt: 'Get notified when I add or post new stuff &nbsp; [<i class="fa fa-twitter"></i> @LuisMigSerrano](https://twitter.com/luismigserrano){: .btn .btn--twitter} [<i class="fa fa-paypal"></i> Tip Me](https://www.paypal.me/LuisMiguelSerrano){: .btn .btn--primary}'
 ---
 
 {% include feature_row id="intro" type="center" %}
