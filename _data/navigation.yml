@@ -36,12 +36,15 @@ main:
     url: /tags/
   - title: "Posts by Category"
     url: /categories/
-  - title: "Collections"
-    url: /collection-archive/
-  - title: "Portfolio"
-    url: /portfolio/
-  - title: "Pages"
-    url: /page-archive/
+  ## These can be useful to add/enable at a later time
+  #- title: "Collections"
+  #  url: /collection-archive/
+  #- title: "Portfolio"
+  #  url: /portfolio/
+
+  #- title: "Pages"
+  #  url: /page-archive/
+
   #- title: "Sitemap"
   #  url: /sitemap/
   #- title: "Recipes"
