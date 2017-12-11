@@ -3,7 +3,7 @@ layout: splash
 permalink: /
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/_pages/home/avi-richards-183715.jpg
+  overlay_image: /assets/images/avi-richards-183715.jpg
   cta_label: "<i class='fa fa-id-card-o'></i>  See my CV"
   cta_url: "https://lmserrano.github.io"
   caption:
@@ -11,7 +11,7 @@ excerpt: 'Software Engineer.<br />IT Consultant, Independent Developer and Freel
 <br /><br />
 {::nomarkdown}<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=lmserrano&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="280px" height="30px"></iframe> {:/nomarkdown}'
 feature_row:
-  - image_path: /assets/images/_pages/home/rawpixel-com-296613.jpg
+  - image_path: /assets/images/rawpixel-com-296613.jpg
     alt: "remote startup setup"
     title: "Remote Startup Setup"
     excerpt: "<span />- Requirements Specification
@@ -23,7 +23,7 @@ feature_row:
     url: "/docs/configuration/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
-  - image_path: /assets/images/_pages/home/ilya-pavlov-87438.jpg
+  - image_path: /assets/images/ilya-pavlov-87438.jpg
     alt: "custom software development projects"
     title: "Custom Software Development Projects"
     excerpt: "<span />- Websites
@@ -35,7 +35,7 @@ feature_row:
     url: "/docs/layouts/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
-  - image_path: /assets/images/_pages/home/kevin-364843.jpg
+  - image_path: /assets/images/kevin-364843.jpg
     alt: "multifaceted domains and contexts"
     title: "Multifaceted Domains and Contexts"
     excerpt: "<span />- Telecommunications
