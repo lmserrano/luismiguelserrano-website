@@ -18,7 +18,7 @@ script: bundle exec rake site:deploy #--quiet #--trace
 env:
   global:
     - secure: "Ozpfl37aUfIhX7XAhxC2sDXcqt0L4wgLakBSg5yqrako0ifk+uTDPyt0R+PsB9AXVGXjo7XQiUGcDf/cbcurLFP6jxUhAGa4/fomARBayxRIrymh/YeR3QkAOUjModihZt+v2pXxMSFJl4Q1OVesS45dTnPj9XEcmOY+mE3dVv2VvgP7gnKyCqp2IHvcYyCP6pKLnVx8gfdimofn1X1fn8vpYaFSS5SMXFfiemmXpdbJ1pTNhEjb6U5wyMpS/ohzVbD9TWP/NoI/QgKfWrtS7ByGOpggTaX5/4KOtxBqNjMn4E8H5LJmE2xJWsVqYlynPzmqN0WNoWqfPo9wEptDsR6AYRBA9omRJ/7zGRl82lMCxymiZRSdYbJBMiBmzyxxg9Jx0gdQO+c6lm6V37snB3mU8tkRVExNp7ynJ7WZtW9ubjie5c7zhYZdwNGnFlmeGAoIzlrTBNwXjJdcsWeowqgyj5X57PruX4Y5/vQAWfoD6pW/u0mD/M8iva3foLTVerRSAWr5fhCp9OcTnrqgyaJv3/aGu+4WyTJ30eg7BjfU7DEkABZbI3FBzIAr4NEwCkyDez6+u2ZnrTGp9Mf9YuNde5FOBwJ1d1/N3gYix+2FWBXLf3mgnQUKc9NDRk9S32fe+e4Y/WEEm6lwiG7Nhdmr5TXftgWILmR+LUFkaag="
-
+    - JEKYLL_ENV=production
 branches:
   only:
     - master # source
