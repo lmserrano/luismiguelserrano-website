@@ -33,13 +33,13 @@ main:
   #- title: "Terms &amp; Privacy Policy"
   #  url: /terms/
   - title: "Posts by Tag"
-    url: /tag-archive/
+    url: /tags/
   - title: "Posts by Category"
-    url: /category-archive/
+    url: /categories/
   - title: "Collections"
     url: /collection-archive/
   - title: "Portfolio"
-    url: /portfolio-archive/
+    url: /portfolio/
   - title: "Pages"
     url: /page-archive/
   #- title: "Sitemap"
