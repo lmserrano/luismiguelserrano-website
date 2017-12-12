@@ -20,4 +20,4 @@ Hello World, and Welcome! This is the first post of this blog!
 
 Feel free to follow me in social networks or get in touch if you'd like to discuss something.
 
-I hope everyone has much of a great time reading this as I will have writing it! :).
+I hope everyone has as much of a great time reading this as I will have writing it! :).

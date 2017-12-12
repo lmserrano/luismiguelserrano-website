@@ -20,7 +20,7 @@ feature_row:
     <br />- Setting up collaboration tools and workflow
     <br />- Managing Software Development
     <br />- Documenting key processes"
-    url: "/docs/configuration/"
+    url: "/about/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
   - image_path: /assets/images/ilya-pavlov-87438.jpg
@@ -32,7 +32,7 @@ feature_row:
     <br />- Project Management and Product Management
     <br />- Open Source Libraries and Tools
     <br />- Documentation"
-    url: "/docs/layouts/"
+    url: "/about/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
   - image_path: /assets/images/kevin-364843.jpg
@@ -44,7 +44,7 @@ feature_row:
     <br />- E-Learning and Social Apps and Platforms
     <br />- Games
     <br />- Research"
-    url: "/docs/license/"
+    url: "/about/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
 github:
