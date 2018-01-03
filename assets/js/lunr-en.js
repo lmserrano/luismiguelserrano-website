@@ -1,28 +1,28 @@
 var idx = lunr(function () {
-  this.field('title', {boost: 10})
+  this.field('title')
   this.field('excerpt')
   this.field('categories')
   this.field('tags')
   this.ref('id')
+
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
 });
-
-
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
 
 console.log( jQuery.type(idx) );
 
@@ -52,8 +52,19 @@ var store = [
 $(document).ready(function() {
   $('input#search').on('keyup', function () {
     var resultdiv = $('#results');
-    var query = $(this).val();
-    var result = idx.search(query);
+    var query = $(this).val().toLowerCase().replace(":", "");
+    var result =
+      idx.query(function (q) {
+        query.split(lunr.tokenizer.separator).forEach(function (term) {
+          q.term(term, {  boost: 100 })
+          if(query.lastIndexOf(" ") != query.length-1){
+            q.term(term, {  usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 10 })
+          }
+          if (term != ""){
+            q.term(term, {  usePipeline: false, editDistance: 1, boost: 1 })
+          }
+        })
+      });
     resultdiv.empty();
     resultdiv.prepend('<p class="results__found">'+result.length+' Result(s) found</p>');
     for (var item in result) {
