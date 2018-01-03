@@ -1,0 +1,13 @@
+nice: 20
+pngout: false # disable
+jpegoptim:
+  allow_lossy: true
+  strip: all
+  max_quality: 60
+#jpegrecompress:
+#  allow_lossy: true
+#  quality: 3
+#optipng:
+#  level: 5
+#  interlace: false
+#  strip: true

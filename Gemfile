@@ -41,3 +41,8 @@ gem 'minimal-mistakes-jekyll', '4.8.0'
 gem 'wdm', '~> 0.1.0' if Gem.win_platform?
 gem 'jekyll-remote-theme'
 
+# For compression and optimization
+gem 'reduce' # Lossless compression for website resources
+
+gem 'image_optim', '~> 0.26'
+gem 'image_optim_pack'
