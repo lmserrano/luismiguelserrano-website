@@ -76,7 +76,7 @@ namespace :resources do
       case File.extname(file)
         when ".css", ".gif", ".html", ".jpg", ".jpeg", ".js", ".png", ".xml"
           # Create a copy of the file with lossless compression
-          newFilePath = "assets/images/#{File.basename(file)}"
+          newFilePath = "assets/images/optimized/#{File.basename(file)}"
           puts "Processing: #{file} - Creating: #{newFilePath}"
           original += File.size(file).to_f
           min = Reduce.reduce(file)
@@ -91,6 +91,33 @@ namespace :resources do
           compressed += File.size(newFile)
         else
           puts "Skipping: #{file}"
+      end
+    end
+    puts "Total compression %0.2f\%" % (((original-compressed)/original)*100)
+
+    puts "\n## Compressing static original assets (post-specific)"
+    original = 0.0
+    compressed = 0
+    image_optim = ImageOptim.new
+    Dir.glob("assets/images/original_posts/**/*.*") do |file|
+      case File.extname(file)
+      when ".css", ".gif", ".html", ".jpg", ".jpeg", ".js", ".png", ".xml"
+        # Create a copy of the file with lossless compression
+        newFilePath = "assets/images/optimized_posts/#{File.basename(file)}"
+        puts "Processing: #{file} - Creating: #{newFilePath}"
+        original += File.size(file).to_f
+        min = Reduce.reduce(file)
+        File.open(newFilePath, "w") do |f|
+          f.write(min)
+        end
+
+        # Apply additional compression
+        image_optim.optimize_image!(newFilePath)
+
+        newFile = File.open(newFilePath, "r")
+        compressed += File.size(newFile)
+      else
+        puts "Skipping: #{file}"
       end
     end
     puts "Total compression %0.2f\%" % (((original-compressed)/original)*100)

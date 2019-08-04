@@ -11,7 +11,9 @@ minimal_mistakes_skin    : "default" #"default", "air", "aqua", "contrast", "dar
 
 future                   : false
 
-search                   : false # TODO Enable search
+search                   : false # true, false (default)
+search_full_content      : true # true, false (default)
+search_provider          : lunr # lunr (default), algolia, google
 
 # Site Settings
 locale                   : "en-US"
@@ -39,12 +41,12 @@ comments:
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message'] # ['name', 'email', 'url', 'message']
   branch                 : "master"
-  commitMessage          : "New comment" # "New comment"
-  filename               : comment-{@timestamp} # comment-{@timestamp}
-  format                 : "yml" # "yml"
-  moderation             : true # true
-  path                   : "_data/comments/{options.slug}" # "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message'] # ['name', 'email', 'message']
+  commitMessage          : "New comment by {fields.name}"
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
   transforms:
     email                : # "md5"
   generatedFields:
@@ -52,6 +54,7 @@ staticman:
       type               : # "date"
       options:
         format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+  endpoint               : # URL of your own deployment with trailing slash, will fallback to the public instance
 reCaptcha:
   siteKey                : "6LdEPjwUAAAAALn51yZoLkboqjCrPRNzKsjAtcOW" #"6LdRBykTAAAAAFB46MnIu6ixuxwu9W1ihFF8G60Q"
   secret                 : "StsyhzdESoBf3HeD9Gj52v+pKeStGxFjdtPt9EQoZ/010ih3RXBdegez2YEK1honht511Kn3DI/RDby/G4sDYoaf4vl/yYuA+akuHvE6k0e6fCEIG7cpBA5xCrSylIpyGtiduFu1LYM3zw4s0zEtq7qOTrve0BmfS4h96iQkezc=" #"PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="
@@ -94,34 +97,75 @@ analytics:
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "/assets/images/authors/Luis_Miguel_Serrano.jpg"
-  bio              : "Bio."
+  bio              : "Software Engineer."
   location         : "Lisbon, Portugal"
-  email            : "LMSSerrano@gmail.com"
-  uri              : "https://lmserrano.github.io"
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         : # *facebook
-  foursquare       :
-  github           : "lmserrano"
-  gitlab           :
-  google_plus      :
-  keybase          :
-  instagram        :
-  lastfm           :
-  linkedin         : "LuisMigSerrano"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : "371388/luis-miguel-serrano"
-  steam            :
-  tumblr           :
-  twitter          : *twitter
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "http://luismiguelserrano.com"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:LMSSerrano@gmail.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/luismigserrano"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/LuisMigSerrano"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lmserrano"
+    - label: "Stack Overflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/371388/luis-miguel-serrano"
 
+#  email            : "LMSSerrano@gmail.com"
+#  uri              : "https://lmserrano.github.io"
+#  bitbucket        :
+#  codepen          :
+#  dribbble         :
+#  flickr           :
+#  facebook         : # *facebook
+#  foursquare       :
+#  github           : "lmserrano"
+#  gitlab           :
+#  google_plus      :
+#  keybase          :
+#  instagram        :
+#  lastfm           :
+#  linkedin         : "LuisMigSerrano"
+#  pinterest        :
+#  soundcloud       :
+#  stackoverflow    : "371388/luis-miguel-serrano"
+#  steam            :
+#  tumblr           :
+#  twitter          : *twitter
+#  vine             :
+#  weibo            :
+#  xing             :
+#  youtube          :
+
+# Site Footer
+footer:
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "http://luismiguelserrano.com"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:LMSSerrano@gmail.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/luismigserrano"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/LuisMigSerrano"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lmserrano"
+    - label: "Stack Overflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/371388/luis-miguel-serrano"
 
 # Reading Files
 include:
@@ -151,7 +195,6 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - reference # Added
 keep_files:
   - .git
   - .svn
@@ -328,7 +371,7 @@ compress_html:
     envs: development
 
 
-# Settings for builing master branch with travis-ci
+# Settings for building master branch with travis-ci
 # with jekyll-travis
 
 # Settings for deploy rake task
