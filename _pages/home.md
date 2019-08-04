@@ -4,8 +4,9 @@ permalink: /
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/avi-richards-183715.jpg
-  cta_label: "<i class='fa fa-id-card-o'></i>  See my CV"
-  cta_url: "https://lmserrano.github.io"
+  actions:
+    - label: "<i class='fa fa-id-card-o'></i>  See my CV"
+      url: "https://lmserrano.github.io"
   caption: "Photo credit: [Unsplash - Avi Richards](https://unsplash.com/@avirichards)"
 excerpt: 'Software Engineer.<br />IT Consultant, Independent Developer and Freelancer.<br /><small>Full Stack & DevOps. Product Development. Remote Tech Startups Setup.</small>
 <br /><br />
