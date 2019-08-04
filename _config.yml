@@ -113,7 +113,7 @@ author:
   linkedin         : "LuisMigSerrano"
   pinterest        :
   soundcloud       :
-  stackoverflow    : "https://stackoverflow.com/users/371388/luis-miguel-serrano"
+  stackoverflow    : "371388/luis-miguel-serrano"
   steam            :
   tumblr           :
   twitter          : *twitter
@@ -276,6 +276,8 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-remote-theme
+  - jekyll-include-cache
+
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -285,6 +287,8 @@ whitelist:
   - jekyll-feed
   - jemoji
   - jekyll-remote-theme
+  - jekyll-include-cache
+
 
 
 # Archives

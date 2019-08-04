@@ -12,7 +12,7 @@ excerpt: 'Software Engineer.<br />IT Consultant, Independent Developer and Freel
 {::nomarkdown}<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=lmserrano&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="280px" height="30px"></iframe> {:/nomarkdown}'
 feature_row:
   - image_path: /assets/images/rawpixel-com-296613.jpg
-    caption: "Photo credit: [Unsplash - RawPixel.com](https://unsplash.com/@rawpixel)"
+    image_caption: "Photo credit: [Unsplash - RawPixel.com](https://unsplash.com/@rawpixel)"
     alt: "remote startup setup"
     title: "Remote Startup Setup"
     excerpt: "<span />- Requirements Specification
@@ -25,7 +25,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn More"
   - image_path: /assets/images/ilya-pavlov-87438.jpg
-    caption: "Photo credit: [Unsplash - Ilya Pavlov](https://unsplash.com/@ilyapavlov)"
+    image_caption: "Photo credit: [Unsplash - Ilya Pavlov](https://unsplash.com/@ilyapavlov)"
     alt: "custom software development projects"
     title: "Custom Software Development Projects"
     excerpt: "<span />- Websites
@@ -38,7 +38,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn More"
   - image_path: /assets/images/kevin-364843.jpg
-    caption: "Photo credit: [Unsplash - Kevin](https://unsplash.com/@ikukevk)"
+    image_caption: "Photo credit: [Unsplash - Kevin](https://unsplash.com/@ikukevk)"
     alt: "multifaceted domains and contexts"
     title: "Multifaceted Domains and Contexts"
     excerpt: "<span />- Telecommunications
