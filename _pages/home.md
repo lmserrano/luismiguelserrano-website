@@ -5,7 +5,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/optimized/avi-richards-183715.jpg
   actions:
-    - label: "<i class='fas fa-id-card-o'></i>  See my CV"
+    - label: "<i class='far fa-id-card'></i>  See my CV"
       url: "https://lmserrano.github.io"
   caption: "Photo credit: [Unsplash - Avi Richards](https://unsplash.com/@avirichards)"
 excerpt: 'Software Engineer.<br />IT Consultant, Independent Developer and Freelancer.<br /><small>Full Stack & DevOps. Product Development. Remote Tech Startups Setup.</small>
@@ -54,7 +54,7 @@ feature_row:
 github:
   - excerpt: '{::nomarkdown}<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=lmserrano&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="280px" height="30px"></iframe> {:/nomarkdown}'
 intro:
-  - excerpt: 'Get notified when I add or post new content &nbsp; [<i class="fa fa-twitter"></i> @LuisMigSerrano](https://twitter.com/LuisMigSerrano){: .btn .btn--twitter} [<i class="fa fa-paypal"></i> Tip Me](https://www.paypal.me/LuisMiguelSerrano){: .btn .btn--primary}'
+  - excerpt: 'Get notified when I add or post new content &nbsp; [<i class="fab fa-twitter"></i> @LuisMigSerrano](https://twitter.com/LuisMigSerrano){: .btn .btn--twitter} [<i class="fab fa-paypal"></i> Tip Me](https://www.paypal.me/LuisMiguelSerrano){: .btn .btn--primary}'
 
 feature_row_contact:
   - image_path:
