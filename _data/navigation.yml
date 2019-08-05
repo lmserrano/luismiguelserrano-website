@@ -24,6 +24,8 @@ main:
   #  url: /docs/quick-start-guide/
 #  - title: "Search"
 #    url: /search/
+  - title: "Home"
+    url: /
   - title: "About"
     url: /about/
   - title: "Blog Posts"
