@@ -35,7 +35,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'commonmarker'
 
 gem 'github-pages', '172', group: :jekyll_plugins
-gem 'rake', '12.0.0'
+gem 'rake', '12.3.3'
 gem 'minimal-mistakes-jekyll', '4.8.0'
 
 gem 'wdm', '~> 0.1.0' if Gem.win_platform?
